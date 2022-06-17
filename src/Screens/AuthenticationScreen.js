@@ -7,11 +7,16 @@ import {
   Keyboard,
   Image,
 } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 import { AntDesign } from "@expo/vector-icons";
 import InputField from "../Components/InputField";
 import CustomButton from "../Components/CustomButton";
 
 const AuthenticationScreen = () => {
+  const navigation = useNavigation();
+  const onLoginClick = () => {
+    navigation.navigate("Home");
+  };
   return (
     <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
       <View style={styles.container}>
@@ -40,7 +45,11 @@ const AuthenticationScreen = () => {
               rightText="Forgot password?"
             />
             <View style={{ marginTop: 20 }} />
-            <CustomButton btnTitle="Login now" variant="primary" />
+            <CustomButton
+              btnTitle="Login now"
+              variant="primary"
+              onLoginClick={onLoginClick}
+            />
           </View>
 
           <Pressable style={styles.bottom}>
@@ -60,7 +69,7 @@ const AuthenticationScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "black",
+    // backgroundColor: "black",
     justifyContent: "center",
     alignItems: "center",
     paddingHorizontal: 20,

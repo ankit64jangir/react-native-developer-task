@@ -1,10 +1,10 @@
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
 const CustomButton = (props) => {
-  const { btnTitle, variant } = props;
+  const { btnTitle, variant, onLoginClick } = props;
   return (
     <View>
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button} onPress={onLoginClick}>
         <Text
           style={
             variant === "primary"
