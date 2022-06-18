@@ -69,7 +69,6 @@ const AuthenticationScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // backgroundColor: "black",
     justifyContent: "center",
     alignItems: "center",
     paddingHorizontal: 20,
