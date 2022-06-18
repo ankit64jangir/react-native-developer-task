@@ -1,4 +1,5 @@
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import React from 'react';
 
 const CustomButton = (props) => {
   const { btnTitle, variant, onLoginClick } = props;

@@ -1,4 +1,5 @@
 import { View, Text, StyleSheet, TextInput } from "react-native";
+import React from 'react';
 import CustomButton from "./CustomButton";
 import { FontAwesome } from "@expo/vector-icons";
 

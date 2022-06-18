@@ -1,4 +1,5 @@
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import React from 'react';
 import { AntDesign } from "@expo/vector-icons";
 import InputField from "../Components/InputField";
 import CustomButton from "../Components/CustomButton";

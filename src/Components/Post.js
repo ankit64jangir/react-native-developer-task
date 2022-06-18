@@ -1,4 +1,5 @@
 import { View, Text, StyleSheet, Image } from "react-native";
+import React from 'react';
 import { MaterialCommunityIcons, Entypo } from "@expo/vector-icons";
 
 const Post = (props) => {

@@ -5,6 +5,7 @@ import {
   Keyboard,
   Image,
 } from "react-native";
+import React from 'react';
 import { useNavigation } from "@react-navigation/native";
 import Login from "../Components/Login";
 
