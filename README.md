@@ -1,3 +1,12 @@
+# Instruction to run
+
+Download expo on your mobile device and scan QR code.
+> **Note**
+> If below QR code not working, you can clone this repo and run `npm install` and `expo start` to run the app on your device.
+
+
+![image](https://user-images.githubusercontent.com/55452218/174437994-df823a0f-b69d-43d4-8ebc-cc8a58705dba.png)
+
 # Task: React Native Developer Interview
 
 This is a task designed to understand the skillset of developers joining Now&Me.
