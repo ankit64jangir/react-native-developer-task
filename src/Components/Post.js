@@ -30,7 +30,11 @@ const Post = (props) => {
         </View>
 
         <View style={styles.commentContainer}>
-          <MaterialCommunityIcons name="message-reply-outline" size={20} color="#C5C7CA" />
+          <MaterialCommunityIcons
+            name="message-reply-outline"
+            size={20}
+            color="#C5C7CA"
+          />
           <Text style={styles.comments}>{comments} comments</Text>
         </View>
       </View>
@@ -42,6 +46,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 12,
+    marginTop: 16,
   },
   box: {
     height: 282,
