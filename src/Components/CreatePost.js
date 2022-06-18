@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   },
   createPostText: {
     color: "#C5C7CA",
-    fontWeight: '500',
+    fontWeight: "500",
     fontSize: 18,
     marginTop: 10,
   },

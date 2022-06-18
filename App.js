@@ -5,8 +5,9 @@ import { NavigationContainer, DarkTheme } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 
-import AuthenticationScreen from "./src/Screens/AuthenticationScreen";
+import LoginScreen from "./src/Screens/LoginScreen";
 import HomeScreen from "./src/Screens/HomeScreen";
+import SignUpScreen from "./src/Screens/SignUpScreen";
 
 const NavigationStack = createNativeStackNavigator();
 
@@ -16,16 +17,20 @@ const App = () => {
       <SafeAreaProvider style={{ backgroundColor: "black" }}>
         <NavigationContainer theme={DarkTheme}>
           <NavigationStack.Navigator
-            initialRouteName="Authentication"
+            initialRouteName="LoginScreen"
             screenOptions={{
               headerShown: false,
             }}
           >
             <NavigationStack.Screen
-              name="Authentication"
-              component={AuthenticationScreen}
+              name="LoginScreen"
+              component={LoginScreen}
             />
-            <NavigationStack.Screen name="Home" component={HomeScreen} />
+            <NavigationStack.Screen
+              name="SignUpScreen"
+              component={SignUpScreen}
+            />
+            <NavigationStack.Screen name="HomeScreen" component={HomeScreen} />
           </NavigationStack.Navigator>
           <StatusBar style="light" />
         </NavigationContainer>
